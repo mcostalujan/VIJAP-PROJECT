@@ -44,3 +44,6 @@ TagManager:
   - name: Character Parts
     uniqueID: 1568744541
     locked: 0
+  - name: Scene
+    uniqueID: 3331707351
+    locked: 0

@@ -53,8 +53,9 @@
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\InputCharacter.cs" />
     <Compile Include="Assets\Scripts\Jugador1Controller.cs" />
+    <Compile Include="Assets\Scripts\InputCharacter.cs" />
+    <Compile Include="Assets\Scripts\MovimientoCharacter2.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

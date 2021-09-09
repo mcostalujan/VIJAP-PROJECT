@@ -32,5 +32,6 @@ public class Jugador1Controller : MonoBehaviour
         //transformxd.position = pos;
         Vector2 pos = new Vector2(h, v) * velocidad;
         cuerpo1.velocity = pos;
+
     }
 }
