@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637668517540636124
-    m_Hash: 2526348579
+      ticks: 637668534149041313
+    m_Hash: 2207441442
   m_LockFileStatus:
     m_FilePath: D:/Documents/Games/VIJAP-PROJECT/RECOLECTOR/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637668517540956271
-    m_Hash: 1097005391
+      ticks: 637668534149051310
+    m_Hash: 2680165568
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:

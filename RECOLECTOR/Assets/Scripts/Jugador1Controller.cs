@@ -23,7 +23,7 @@ public class Jugador1Controller : MonoBehaviour
     void Update()
     {
         UpdateMove();
-        // Debug.Log(moveDirection.x);
+        // Debug.Log(transform.position.x);
         if(moveDirection.x != 0){
             anim.enabled = true;
         }else{
@@ -34,6 +34,8 @@ public class Jugador1Controller : MonoBehaviour
     private void UpdateMove(){
         h = inputJugador.ejeH;
         v = inputJugador.ejeV;
+        // Debug.Log(h);
+
 
         moveDirection.x=h;
         moveDirection.y=v;
