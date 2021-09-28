@@ -4,34 +4,59 @@ using UnityEngine;
 
 public class Jugador1Controller : MonoBehaviour
 {
+    // Move
     private InputCharacter inputJugador;
-    private Transform transformxd;
-    [SerializeField] private float velocidad = 3;
     private float h, v;
+    UnityEngine.Vector3 moveDirection;
+    [SerializeField] private float speed = 3;
+    [SerializeField] private float speedRotation = 720;
+    private bool isFacingRight = true;
 
-    private Rigidbody2D cuerpo1;
+    [SerializeField] Animator anim;
 
     void Start()
     {
         inputJugador = GetComponent<InputCharacter>();
-        transformxd = GetComponent<Transform>();
-        cuerpo1 = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        UpdateMove();
+        // Debug.Log(transform.position.x);
+        if(moveDirection.x != 0){
+            anim.enabled = true;
+        }else{
+            anim.enabled = false;
+        }
+
+    }
+    private void UpdateMove(){
         h = inputJugador.ejeH;
         v = inputJugador.ejeV;
+        // Debug.Log(h);
 
-        //Vector2 pos = transformxd.position +
-        //    new Vector3(
-        //        velocidad * h * Time.deltaTime,
-        //        velocidad * v * Time.deltaTime, 0
-        //    );
-        //transformxd.position = pos;
-        Vector2 pos = new Vector2(h, v) * velocidad;
-        cuerpo1.velocity = pos;
 
+        moveDirection.x=h;
+        moveDirection.y=v;
+
+        transform.position += moveDirection * Time.deltaTime * speed;
+
+
+        if(moveDirection.x < 0 && isFacingRight){
+            Flip();
+        }
+        if(moveDirection.x > 0 && !isFacingRight){
+            Flip();
+        }
+    }
+    private void Flip(){
+        if(isFacingRight){
+            transform.position += new UnityEngine.Vector3(-0.5f,0,0);
+        }else{
+            transform.position += new UnityEngine.Vector3(0.5f,0,0);
+        }
+        transform.Rotate(0.0f,180.0f,0);
+        isFacingRight = !isFacingRight;
     }
 }
