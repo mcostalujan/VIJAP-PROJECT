@@ -36,14 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Garbage.cs" />
      <Compile Include="Assets\Scripts\Jugador1Controller.cs" />
      <Compile Include="Assets\Scripts\InputCharacter.cs" />
      <Compile Include="Assets\Scripts\MovimientoCharacter2.cs" />
-     <Compile Include="Assets\Scripts\CharacterSpawnerController.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
-     <Compile Include="Assets\Scripts\Character.cs" />
+     <Compile Include="Assets\Scripts\CharacterSpawnerController.cs" />
      <Compile Include="Assets\Scripts\GarbageSpawner.cs" />
-     <Compile Include="Assets\Scripts\Garbage.cs" />
+     <Compile Include="Assets\Scripts\Character.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Program Files/Unity Hub/Editor/2020.3.16f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
